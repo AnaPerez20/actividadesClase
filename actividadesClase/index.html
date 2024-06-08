@@ -1,0 +1,205 @@
+<!-- 
+  html -> lenguaje de marcado de hipertexto
+  marcado -> ETIQUETAS (apertura y cierre)
+  hipertexto -> redirección a otras páginas de html
+ -->
+ <!DOCTYPE html>
+
+ <!-- 
+   lang -> lenguaje en el que está hecho nuestra página web
+  -->
+ <html lang="es">
+ 
+ <!-- HEAD -> CEREBRO DE MI PÁGINA -> 
+ 
+   Todo lo que necesitemos para que funcione nuestro sitio web, pero NO SE VEA
+ 
+   - LINKS -> Vinculan con mi .css, vinculan con .js
+   - METADADOS: -> enfocados en el posicionamiento SEO
+ -->
+ 
+ <head>
+   <!-- Permite que el navegador interprete caracteres especiales -->
+   <meta charset="UTF-8">
+   <!-- Permite que se pueda adaptar a diferentes pantallas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <!-- Títulos y descripciones meta - enfocado a posicionamiento SEO -->
+   <meta name="author" content="Ana Solorzano">
+   <meta name="keywords" content="portafolio, presentacion">
+   <meta name="description" content="pagina informativa sobre portafolios">
+ 
+   <!-- Link a mis estilos -->
+   <!-- 
+       href -> donde especifico las rutas de mis estilos
+      -->
+   <link rel="stylesheet" href="./styles/index.css">
+ 
+   <!-- Link de mi favicon - logo en la pestaña del navegador-->
+   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+ 
+   <!-- Link a mis íconos -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ 
+   <title>Portafolio</title>
+ 
+ </head>
+  
+ <body>
+   <!-- 
+     BODY -> Donde van nuestras etiquetas -> DONDE ESTRUCTURAMOS NUESTRO PROYECTO
+ 
+     lo que VEMOS de nuestro sitio web
+     -->
+ 
+ 
+   <!-- Inicio encabezado de mi página -->
+   <header>
+     <!-- 
+         dentro ponemos nuestro menú, o baner, o carrusel, o lo que queramos que sea nuestro encabezado
+        -->
+ 
+     <!-- menú de navegación -->
+ 
+     <!-- nav-> menú de navegación -->
+     <nav>
+       <!-- Siempre son listas
+           listas ordenadas -> ol (order list)
+           listas desordenadas -> ul (unorder list)
+ 
+           cada lista tiene su elemento
+           etiqueta -> li -> list item
+         -->
+ 
+       <!-- <ol>
+             <li>Elemento 1: ordenada</li>
+             <li>Elemento 2: : ordenada</li>
+             <li>Elemnto 3: : ordenada</li>
+           </ol> -->
+ 
+       <!-- etiqueta de separeción -->
+       <!-- <hr> -->
+ 
+       <!-- img -> ETIQUETA PARA IMÁGENES -->
+       <!-- a -> ETIQUETA PARA REDIRECCIONAR -->
+ 
+ 
+       <ul>
+         <li><a href="https://excalidraw.com/">Seccion 1</a></li>
+         <li><a href="#">Seccion 2</a></li>
+         <li>
+          <a href="./index.html">
+          <!-- src -> source -> fuente
+                 La ruta de la imágen 
+                alt -> texto descriptivo de la imagen -> texto alternativo
+                 -->
+             <img src="./assets/logo.png" alt="logo">
+           </a>
+         </li>
+            <li><a href="#">Seccion 3</a></li>
+            <li><a href="https://www.tiendasjumbo.co/">Seccion 4</a></li>
+       </ul>
+     </nav>
+ 
+     <!-- Seccion baner -->
+     <section>
+       <img src="./assets/Imagen personal.jpg" alt="imagen-personal">
+     </section>
+ 
+   </header>
+ 
+   <!-- Inicio del contenido de nuestra página -->
+
+  <main>
+    <!-- seccion informativa 1-->
+    <!-- Etiqueta seccion -> divide el texto en temticas -->
+
+    <section>
+<!--
+    ETIQUETAS PARA LOS TEXTOS -> h
+    h1 -> EL TITULO PRINCIPAL -> solo debe haber uno
+    h2 -> tiutulos de nuestras secciones de contenido
+    h3 - h6 -> subtitulos
+    p -> parrafos
+-->
+<h1> TITULO PRINCIPAL</h1> 
+<!-- etiquetas iframe -> permiten consumir contenido de otro sitio web-->
+
+<!--
+    ETIQUETAS SEMANTICAS -> estructura del codigo -> SEO
+el nombre de la etqueta me indica que contenido va a haber:
+
+    h3 -> subtitulo
+    <li> ->item list
+
+Etiqueta DIV (NO SEMANTICO)
+No semantico, puede contener cualquier cosa:
+
+<div> ->contenedor de elementos
+
+-->
+
+
+<div> <!--etiqueta para video -> pasos
+1. buscar video
+2. buscar compartir
+3. ver icono de "insertar" o (<>)-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aEXgL7bDgGc?si=9ksX2aTqfIdfG7BP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique, explicabo nostrum quis eligendi at velit ad aliquam deleniti! Tempora quae sit laborum eum consequuntur quas in temporibus odit distinctio.
+</p>
+
+
+    </section>
+    
+    <!-- seccion informativa 2-->
+
+    <section>
+      <h2>El titulo de mi seccion</h2>
+
+    <div> <!--imagen-->
+<img src="./assets/2149352652.jpg" alt="imagen-ejemplo">
+<img src="./assets/2149352652.jpg" alt="imagen-ehemplo">
+<img src="./assets/2149352652.jpg" alt="imagen-ehemplo">
+<img src="./assets/2149352652.jpg" alt="imagen-ehemplo">
+<img src="./assets/2149352652.jpg" alt="imagen-ehemplo">
+<img src="./assets/2149352652.jpg" alt="imagen-ehemplo">
+
+    </div>
+</section>
+
+     
+</main>
+
+
+<footer>
+    <!--division de contenido: contactanos-->
+    <div>
+        <h3>Contactame</h3> <!--titulo para esa parte del footer-->
+        <ol> <!--para ordenar las listas-->
+            <li>Telefono: 55 678 789</li>
+            <li>Correo: anasolorzano_p@outlook.com</li>
+            <li> anasolorzano_p</li>
+        </ol>
+    </div>
+
+    <!-- division de contenido de logo-->
+    <div>
+        <img src="./assets/logo.png" alt="logo">
+    </div>
+
+    <!--division de contenido redes sociales-->
+    <div>
+      <h3>Redes sociales</h3>
+    <div> 
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    </div>
+    
+    </footer>
+
+    

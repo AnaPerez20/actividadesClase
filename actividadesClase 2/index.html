@@ -1,0 +1,109 @@
+<!-- Posicionamiento SEO-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Metadatos-->
+    <meta name="author" content="Ana Solorzano">
+    <meta name="keywords" content="practica, loros">
+    <meta name="description" content="actividad practica css - flexbox y grid">
+
+    <!--Links de estilos a mis progrmas -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <title>Practica 2</title>
+</head>
+
+    
+<body>
+    <header>
+        <nav class="menuNavegacion">
+            <!--Nuestro logo-->
+            <!--ETIQUTAS NO SEMANTICAS: usadas para dar estilos
+            
+                    div
+                    span-->
+            <div class="logo">
+                <a href="#">
+                    <img class="img-logo" src="./assets/images/logo.jpg" alt="logo">
+                    <p class="p-logo">Looking for <span class="span-logo">freedom</span></p>
+                </a>
+            </div>
+
+            <ul class="listaMenu"> <!--Class es para alguna modificacion que yo quiera hacer-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyecto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Aliados</a></li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </nav> 
+     </header>
+
+     <main>
+        <!--Seccion contenido principal 
+            tip: escribir nombre etiqueta, pone . y luego nombre de la clase "holaaa"-->
+        <section class="contenedorPrincipal">
+            <h1>Proyecto: Tomemos Conciencia </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas enim dicta id sed quaerat fugit nam iure minima, qui esse magnam modi reprehenderit. Eveniet beatae at deserunt rerum iure.</p>
+        
+            <article class="contenedorImagenes">
+
+                <div class="imagenes img1">
+                    <img src="./assets/images/img1.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus in voluptates architecto quidem enim ipsam laboriosam dolorum nesciunt, aspernatur non cupiditate odit amet vero soluta repellendus asperiores corrupti debitis.</p>
+                    </div>
+                </div>
+                <div class="imagenes img2">
+                    <img src="./assets/images/img2.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus in voluptates architecto quidem enim ipsam laboriosam dolorum nesciunt, aspernatur non cupiditate odit amet vero soluta repellendus asperiores corrupti debitis.</p>
+                    </div>
+                </div>
+                <di class="imagenes img3">
+                    <img src="assets/images/img3.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus in voluptates architecto quidem enim ipsam laboriosam dolorum nesciunt, aspernatur non cupiditate odit amet vero soluta repellendus asperiores corrupti debitis.</p>
+                    </div>
+                </di>
+                <di class="imagenes img4">
+                    <img src="./assets/images/img4.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus in voluptates architecto quidem enim ipsam laboriosam dolorum nesciunt, aspernatur non cupiditate odit amet vero soluta repellendus asperiores corrupti debitis.</p>
+                    </div>
+                </di>
+                <di class="imagenes img5">
+                    <img src="./assets/images/img7.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus in voluptates architecto quidem enim ipsam laboriosam dolorum nesciunt, aspernatur non cupiditate odit amet vero soluta repellendus asperiores corrupti debitis.</p>
+                    </div>
+                </di>
+            </article>
+        
+        
+        </section>
+
+        <!--Seecion practiva flexbox-->
+        <section class="contenedorFlex">
+            <div class="flex-hijo">Caja 1</div>
+            <div class="flex-hijo">Caja 2</div>
+            <div class="flex-hijo">Caja 3</div>
+            <div class="flex-hijo">Caja 4</div>
+            <div class="flex-hijo">Caja 5</div>
+        </section>
+
+     </main>
+
+     <footer>
+        <p>Practica de desarrollo creada por &copy; Ana Solorzano 2024</p>
+     </footer>
+
+
+
+
+</body>
+</html>
